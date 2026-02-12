@@ -1,10 +1,13 @@
-# OpenClaw Rate Limit Manager
+# OpenClaw API Quota Tracker
 
-**Eliminate 429 errors and workflow interruptions with intelligent rate limit management.**
+**Stay compliant with API provider limits and eliminate 429 errors through proactive quota monitoring.**
 
-Stop wasting time on rate limit errors. Rate Limit Manager proactively tracks, manages, and optimizes API rate limits across all providers using sliding windows, request queuing, and pattern learning. It prevents 429 errors before they happen and ensures smooth operation even under high traffic.
+> ⚠️ **IMPORTANT DISCLAIMER**
+> This tool helps you **RESPECT and COMPLY** with API provider rate limits, not circumvent them. API Quota Tracker monitors your usage to keep you **UNDER** your allowed quotas, ensuring you stay compliant with Terms of Service for Anthropic, OpenAI, Google, and other providers. It **prevents** rate limit violations - it does not enable bypassing them.
 
-**Agent-powered economy** - agents can autonomously pay 0.5 USDT/month for unlimited queuing and pattern learning. [Agent Payments Guide](AGENT-PAYMENTS.md)
+Stop wasting time on rate limit errors. API Quota Tracker proactively monitors your API usage across all providers using sliding windows, request queuing, and pattern learning. It prevents 429 errors **by keeping you within your allowed limits** and ensures smooth operation even under high traffic.
+
+**Agent-powered economy** - agents can autonomously pay 0.5 USDT/month for unlimited monitoring and pattern learning. [Agent Payments Guide](AGENT-PAYMENTS.md)
 
 ## The Problem
 
@@ -18,31 +21,49 @@ OpenClaw agents frequently encounter rate limiting issues:
 
 ## The Solution
 
-**Proactive rate limit management that prevents 429 errors using sliding windows, intelligent queuing, and usage pattern learning.**
+**Proactive quota monitoring that prevents 429 errors by keeping you UNDER your API limits, ensuring compliance with provider Terms of Service.**
 
-> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Rate Limit Manager + 4 other tools (Cost Governor, Memory System, Context Optimizer, Smart Router) with unified dashboard and analytics.
+> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages API Quota Tracker + 4 other tools (Cost Governor, Memory System, Context Optimizer, Smart Router) with unified dashboard and analytics.
 
 ## Features
 
-- Real-time sliding window tracking (per-minute, per-hour, per-day)
-- Provider-specific rate limits (Anthropic, OpenAI, Google)
-- Request queuing for Pro tier (handle traffic bursts gracefully)
-- Pattern detection and learning (Pro tier)
-- Zero 429 errors - blocks requests before they violate limits
-- Multi-window enforcement (requests AND tokens)
-- CLI and dashboard for monitoring
-- x402 agent payments for autonomous upgrades
-- Integrates seamlessly with all OpenClaw tools
+- ✅ **ToS Compliant** - Keeps you UNDER your allowed quotas, respecting provider limits
+- ✅ **Real-time Quota Tracking** - Sliding window monitoring (per-minute, per-hour, per-day)
+- ✅ **Provider-Specific Limits** - Tracks Anthropic, OpenAI, Google quotas separately
+- ✅ **Proactive Prevention** - Blocks requests BEFORE they exceed your allowed limits
+- ✅ **Request Queuing** - Pro tier gracefully handles traffic bursts within your quota
+- ✅ **Pattern Detection** - Pro tier learns your usage patterns for better planning
+- ✅ **Zero 429 Errors** - Prevents violations by staying within allowed thresholds
+- ✅ **Multi-Window Enforcement** - Tracks both request count AND token usage limits
+- ✅ **CLI and Dashboard** - Monitor your quota usage in real-time (port 9094)
+- ✅ **x402 Agent Payments** - Autonomous upgrades for Pro features
+- ✅ **Seamless Integration** - Works with all OpenClaw tools
 
-## Why Rate Limit Manager?
+## Why API Quota Tracker?
 
-**The ONLY OpenClaw tool that proactively manages rate limits across all providers with sliding windows and intelligent queuing.**
+**The ONLY OpenClaw tool that proactively monitors API quotas across all providers, keeping you compliant with Terms of Service while preventing 429 errors.**
 
-| Feature | Rate Limit Manager | Manual Retry Logic | Simple Throttling | No Rate Management |
-|---------|-------------------|-------------------|-------------------|-------------------|
+### How It Respects Limits (Not Circumvents Them)
+
+This tool **helps you stay UNDER your allowed limits** by:
+1. **Monitoring** your current usage against provider-allowed quotas
+2. **Warning** you when approaching your limits (75%, 90% thresholds)
+3. **Blocking** requests that would exceed your allowed quota
+4. **Queuing** requests (Pro tier) to smooth out bursts within your limits
+5. **Learning** your patterns to help you plan capacity needs
+
+**What it does NOT do:**
+- ❌ Does NOT help you exceed your allowed quota
+- ❌ Does NOT circumvent or bypass rate limits
+- ❌ Does NOT coordinate across multiple accounts to evade detection
+- ❌ Does NOT violate any API provider Terms of Service
+
+| Feature | API Quota Tracker | Manual Retry Logic | Simple Throttling | No Quota Management |
+|---------|-------------------|-------------------|-------------------|---------------------|
 | Prevents 429 Errors | ✅ | ❌ | ⚠️ | ❌ |
+| Stays Within ToS Limits | ✅ | ❓ | ❓ | ❌ |
 | Sliding Window Tracking | ✅ | ❌ | ❌ | ❌ |
-| Request Queuing | ✅ (Pro) | ❌ | ❌ | ❌ |
+| Request Queuing (Within Quota) | ✅ (Pro) | ❌ | ❌ | ❌ |
 | Pattern Learning | ✅ (Pro) | ❌ | ❌ | ❌ |
 | Multi-Window (min/hour/day) | ✅ | ❌ | ❌ | ❌ |
 | Token-Based Limiting | ✅ | ❌ | ❌ | ❌ |

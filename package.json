@@ -1,7 +1,7 @@
 {
-  "name": "openclaw-rate-limit-manager",
-  "version": "1.0.0",
-  "description": "Proactive rate limit management for OpenClaw agents - prevent 429 errors with sliding windows, request queuing, and pattern learning",
+  "name": "openclaw-api-quota-tracker",
+  "version": "2.0.0",
+  "description": "ToS-compliant API quota monitoring for OpenClaw agents - stay UNDER your limits and prevent 429 errors through proactive tracking, not circumvention",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
@@ -11,13 +11,15 @@
   },
   "keywords": [
     "openclaw",
-    "rate-limiting",
+    "quota-tracking",
+    "api-monitoring",
+    "tos-compliance",
     "sliding-windows",
-    "request-queue",
+    "429-prevention",
     "x402",
     "agent-infrastructure",
     "ai",
-    "pattern-learning"
+    "rate-limit-compliance"
   ],
   "author": "AtlasPA",
   "license": "MIT",
@@ -36,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AtlasPA/openclaw-rate-limit-manager.git"
+    "url": "https://github.com/AtlasPA/openclaw-api-quota-tracker.git"
   },
-  "homepage": "https://github.com/AtlasPA/openclaw-rate-limit-manager#readme"
+  "homepage": "https://github.com/AtlasPA/openclaw-api-quota-tracker#readme"
 }
