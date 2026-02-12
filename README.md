@@ -20,6 +20,8 @@ OpenClaw agents frequently encounter rate limiting issues:
 
 **Proactive rate limit management that prevents 429 errors using sliding windows, intelligent queuing, and usage pattern learning.**
 
+> 💡 **Want all 5 infrastructure tools in one command?** Check out the [OpenClaw Infrastructure Suite](https://github.com/AtlasPA/openclaw-infrastructure) - installs and manages Rate Limit Manager + 4 other tools (Cost Governor, Memory System, Context Optimizer, Smart Router) with unified dashboard and analytics.
+
 ## Features
 
 - Real-time sliding window tracking (per-minute, per-hour, per-day)
