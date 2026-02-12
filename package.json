@@ -1,0 +1,42 @@
+{
+  "name": "openclaw-rate-limit-manager",
+  "version": "1.0.0",
+  "description": "Proactive rate limit management for OpenClaw agents - prevent 429 errors with sliding windows, request queuing, and pattern learning",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "node src/setup.js",
+    "dashboard": "node src/dashboard.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "openclaw",
+    "rate-limiting",
+    "sliding-windows",
+    "request-queue",
+    "x402",
+    "agent-infrastructure",
+    "ai",
+    "pattern-learning"
+  ],
+  "author": "AtlasPA",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "express": "^4.18.2",
+    "commander": "^12.0.0"
+  },
+  "openclaw": {
+    "skill": true,
+    "hooks": {
+      "provider:before": "hooks/provider-before.js",
+      "provider:after": "hooks/provider-after.js",
+      "session:end": "hooks/session-end.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtlasPA/openclaw-rate-limit-manager.git"
+  },
+  "homepage": "https://github.com/AtlasPA/openclaw-rate-limit-manager#readme"
+}

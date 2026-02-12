@@ -1,0 +1,12 @@
+node_modules/
+*.db
+*.db-shm
+*.db-wal
+.DS_Store
+.env
+config.json
+data/
+logs/
+*.log
+.vscode/
+.idea/
